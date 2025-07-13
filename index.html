@@ -1,85 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Brain King</title>
-  <meta name="description" content="This is the official personal website of Digital Brain King. Connect with Amit Kushwaha on Instagram, YouTube, and Facebook.">
-  <meta name="keywords" content="Digital Brain King, Amit Kushwaha, AI Creator, YouTube, Portfolio">
+  <meta name="description" content="A collection of powerful and emotional AI stories by Digital Brain King.">
+  <meta name="keywords" content="AI stories, Digital Brain King, emotional tales, fighter pilot story, hero story">
   <meta name="author" content="Amit Kushwaha" />
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff0000, #ffffff);
+      background: linear-gradient(to right, #ff0000, #ffffff);
       color: #222;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .header {
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #d00000;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
     }
     .card {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-      max-width: 400px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
-    .profile-img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid #ff0000;
-      box-shadow: 0 0 20px red;
-      margin-bottom: 20px;
+    .card:hover {
+      transform: translateY(-5px);
     }
-    h1 {
-      font-size: 28px;
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-top: 0;
       color: #e60000;
-      margin-bottom: 10px;
     }
-    p {
-      font-size: 16px;
-      margin-bottom: 10px;
+    .card-content p {
+      font-size: 15px;
+      margin-bottom: 15px;
     }
-    .social-links a {
-      display: inline-block;
-      margin: 8px;
-      padding: 10px 20px;
+    .card-content a {
       text-decoration: none;
       background: #e60000;
-      color: white;
-      border-radius: 30px;
-      transition: 0.3s ease;
-      font-weight: bold;
-    }
-    .social-links a:hover {
-      background: #000;
       color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      margin-top: 40px;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.05);
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-img" />
-    <h1>Digital Brain King</h1>
-    <p><strong>Contact:</strong> 9546704118</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com/___amit____kushwaha?igsh=dDUxZHk5M2F6ZG8x" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/share/1Ex37pdcsQ/" target="_blank">Facebook</a>
-      <a href="https://youtube.com/@aivideo9090-m9x?si=Lm7pC8LM5km42PqD" target="_blank">YouTube</a>
+  <div class="header">
+    <h1>Digital Brain King - AI Kahaniyaan</h1>
+    <p>Emotional. Inspirational. Unforgettable.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Story+Image" alt="Pilot Story">
+      <div class="card-content">
+        <h3>Pilot aur Aakhri Udaan</h3>
+        <p>Ek fighter pilot ki kahani, jab engine fail ho gaya... lekin hausla zinda tha.</p>
+        <a href="#">Read More</a>
+      </div>
     </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Story+Image" alt="Orphan Story">
+      <div class="card-content">
+        <h3>Anath Bachpan se Hero Tak</h3>
+        <p>Ek chhota anath bacha kaise bana ek global AI expert – rula degi yeh kahani.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Story+Image" alt="Freedom Fighter Story">
+      <div class="card-content">
+        <h3>Azadi ki Aakhri Saans</h3>
+        <p>1947 mein ek unknown freedom fighter ne kya sacrifice diya – dil se salute.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Digital Brain King | Follow on Instagram @___amit____kushwaha</p>
   </div>
 </body>
 </html>
-

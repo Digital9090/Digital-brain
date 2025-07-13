@@ -5,51 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Digital Brain King</title>
   <meta name="description" content="This is the official personal website of Digital Brain King. Connect with Amit Kushwaha on Instagram, YouTube, and Facebook.">
-  <meta name="keywords" content="Digital Brain King, Amit Kushwaha, portfolio, AI video, social links">
+  <meta name="keywords" content="Digital Brain King, Amit Kushwaha, AI Creator, YouTube, Portfolio">
   <meta name="author" content="Amit Kushwaha" />
-  <link rel="stylesheet" href="style.css" />
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      background: linear-gradient(to bottom right, red, white);
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff0000, #ffffff);
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
       padding: 40px;
-      color: #000;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
     }
     .profile-img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 3px solid white;
+      border: 4px solid #ff0000;
+      box-shadow: 0 0 20px red;
       margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #e60000;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
     }
     .social-links a {
       display: inline-block;
-      margin: 10px;
-      padding: 10px 15px;
+      margin: 8px;
+      padding: 10px 20px;
       text-decoration: none;
-      background-color: #fff;
-      color: red;
-      border-radius: 8px;
+      background: #e60000;
+      color: white;
+      border-radius: 30px;
+      transition: 0.3s ease;
       font-weight: bold;
-      transition: 0.3s;
     }
     .social-links a:hover {
-      background-color: red;
+      background: #000;
       color: #fff;
     }
   </style>
 </head>
 <body>
-  <img src="profile-photo.jpg" alt="Profile Photo" class="profile-img" />
-  <h1>Digital Brain King</h1>
-  <p>Welcome to my official personal website.</p>
-  <p>Contact: <strong>9546704118</strong></p>
-
-  <div class="social-links">
-    <a href="https://www.instagram.com/___amit____kushwaha?igsh=dDUxZHk5M2F6ZG8x" target="_blank">Instagram</a>
-    <a href="https://www.facebook.com/share/1Ex37pdcsQ/" target="_blank">Facebook</a>
-    <a href="https://youtube.com/@aivideo9090-m9x?si=Lm7pC8LM5km42PqD" target="_blank">YouTube</a>
+  <div class="card">
+    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-img" />
+    <h1>Digital Brain King</h1>
+    <p><strong>Contact:</strong> 9546704118</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/___amit____kushwaha?igsh=dDUxZHk5M2F6ZG8x" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/share/1Ex37pdcsQ/" target="_blank">Facebook</a>
+      <a href="https://youtube.com/@aivideo9090-m9x?si=Lm7pC8LM5km42PqD" target="_blank">YouTube</a>
+    </div>
   </div>
 </body>
 </html>
+
